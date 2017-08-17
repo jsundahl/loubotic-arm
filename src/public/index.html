@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).keypress(function(e){
+      console.log(e.which);
+      if (e.which === 119){
+        $.post("/w")
+      }
+      if (e.which === 97) {
+        $.post("/a")
+      }
+      if (e.which === 115) {
+        $.post("/s")
+      }
+      if (e.which === 100) {
+        $.post("/d")
+      }
+      if (e.which === 113) {
+        $.post("/q")
+      }
+      if (e.which === 101) {
+        $.post("/e")
+      }
+      if (e.which === 104) {
+        $.post("/h")
+      }
+    });
+
+  </script>
+  <meta charset="UTF-8">
+  <title>loubotic arm</title>
+  <div>
+    Loubotic Arm Instructions:<br>
+    X-Axis Control -- Rotates the base<br>
+    "a" = CCW<br>
+    "d" = CW<br>
+    Z-Axis Control -- Vertical arm height<br>
+    "s" = lower arm down<br>
+    "w" = raise arm up<br>
+    Y-Axis Control -- Rotation twist of arm<br>
+    "q" = CCW<br>
+    "e" = CW<br>
+    Home Position -- resets all axis to home position<br>
+    "h"
+  </div>
+</head>
+<body>
+  <form method="post"
+        action="/"
+        style="text-align: center; padding-top: 10%">
+    <button type="test"
+            class="btn btn-primary btn-lg"
+            formaction="/q"
+            id="q">
+      <
+    </button>
+    <button type="test"
+            class="btn btn-primary btn-lg"
+            id="w"
+            formaction="/w">
+      ^
+    </button>
+    <button type="test"
+            class="btn btn-primary btn-lg"
+            formaction="/e"
+            id="e">
+      >
+    </button>
+    <div>
+      <button type="test"
+              class="btn btn-primary btn-lg"
+              formaction="/a"
+              id="a">
+        <
+      </button>
+      <button type="test"
+              class="btn btn-primary btn-lg"
+              formaction="/d"
+              id="d">
+        >
+      </button>
+    </div>
+    <div>
+      <button type="test"
+              class="btn btn-primary btn-lg"
+              formaction="/s"
+              id="s">
+        v
+      </button>
+    </div>
+    <div style="padding-top: 10%">
+      <button type="test"
+              class="btn btn-primary btn-lg"
+              formaction="/h"
+              id="h">
+        Home
+      </button>
+    </div>
+  </form>
+</body>
+</html>
