@@ -2,7 +2,7 @@
 
 //setup serial
 const SerialPort = require('serialport');
-const port = new SerialPort('/dev/cu.usbmodem1421', {
+const port = new SerialPort('/dev/cu.usbmodem40131', {
   baudRate: 9600
 });
 

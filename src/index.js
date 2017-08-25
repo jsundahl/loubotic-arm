@@ -23,31 +23,38 @@ app.ws('/', function(ws, req) {
   });
   app.post('/w', function(req, res) {
     console.log('w');
-    ws.send('w')
+    ws.send('w');
+    res.sendStatus(200)
   });
   app.post('/s', function(req, res) {
     console.log('s');
     ws.send('s');
+    res.sendStatus(200)
   });
   app.post('/a', function(req, res) {
     console.log('a');
     ws.send('a');
+    res.sendStatus(200)
   });
   app.post('/d', function(req, res) {
     console.log('d');
     ws.send('d');
+    res.sendStatus(200)
   });
   app.post('/q', function(req, res) {
     console.log('q');
     ws.send('q');
+    res.sendStatus(200)
   });
   app.post('/e', function(req, res) {
     console.log('e');
     ws.send('e');
+    res.sendStatus(200)
   });
   app.post('/h', function(req, res) {
     console.log('h');
     ws.send('h');
+    res.sendStatus(200)
   });
 });
 
