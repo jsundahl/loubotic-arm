@@ -8,7 +8,7 @@ const port = new SerialPort('/dev/cu.usbmodem40131', {
 
 //setup webSocket
 const WebSocket = require('ws');
-const ws = new WebSocket('http://localhost:4000');
+const ws = new WebSocket('http://dev.hyphen.wiki:4000');
 
 
 ws.on('open', function open() {
