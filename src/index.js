@@ -18,12 +18,12 @@ app.ws('/', function(ws, req) {
   });
 
   function postForKeys(keys) {
-    keys.forEach(function (key) {
-      app.post('/', function(req, res) {
-        console.log('h');
-        ws.send('h');
-        res.sendStatus(200)
-      });
+    keys.forEach((key) => {
+        app.post(`/${key}`, (req, res) => {
+            console.log(key);
+            ws.send(key);
+            res.sendStatus(200)
+        });
     })
   }
 
